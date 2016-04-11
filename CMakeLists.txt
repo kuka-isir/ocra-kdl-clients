@@ -26,6 +26,7 @@ list(APPEND CMAKE_MODULE_PATH
 catkin_package(INCLUDE_DIRS example-client/include)
 
 include_directories(
+    example-client/include
     ${catkin_INCLUDE_DIRS}
     ${USE_OROCOS_INCLUDE_DIRS}
 )
