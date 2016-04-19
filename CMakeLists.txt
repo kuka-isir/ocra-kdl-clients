@@ -23,15 +23,16 @@ list(APPEND CMAKE_MODULE_PATH
         ${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules
      )
 
-catkin_package(INCLUDE_DIRS example-client/include)
+catkin_package(INCLUDE_DIRS example-client/include test-client/include)
 
 include_directories(
     example-client/include
+    test-client/include
     ${catkin_INCLUDE_DIRS}
     ${USE_OROCOS_INCLUDE_DIRS}
 )
 
 add_subdirectory(example-client)
-
+add_subdirectory(test-client)
 
 include(AddUninstallTarget)
